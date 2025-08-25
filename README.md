@@ -103,12 +103,12 @@ cd ~/carla_simulator
 ### **Step 1: Install Software Requirements**
 
 ```bash
-sudo apt-add-repository "deb http://archive.ubuntu.com/ubuntu focal main universe"
+sudo apt-add-repository "deb http://archive.ubuntu.com/ubuntu jammy main universe"
 sudo apt-get update
-sudo apt-get install build-essential clang-10 lld-10 g++-7 cmake ninja-build libvulkan1 python python3 python3-dev python3-pip libpng-dev libtiff5-dev libjpeg-dev tzdata sed curl unzip autoconf libtool rsync libxml2-dev git git-lfs
-sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-10/bin/clang++ 180
-sudo update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-10/bin/clang 180
-sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-7 180
+sudo apt-get install build-essential clang-10 lld-10 g++-12 cmake ninja-build libvulkan1 python python3 python3-dev python3-pip libpng-dev libtiff5-dev libjpeg-dev tzdata sed curl unzip autoconf libtool rsync libxml2-dev git git-lfs
+sudo update-alternatives --install /usr/bin/clang++ clang++ /usr/lib/llvm-10/bin/clang++ 180 &&
+sudo update-alternatives --install /usr/bin/clang clang /usr/lib/llvm-10/bin/clang 180 &&
+sudo update-alternatives --install /usr/bin/g++ g++ /usr/bin/g++-12 180
 ```
 
 ### **Step 2: Install Python Dependencies**
