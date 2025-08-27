@@ -103,6 +103,10 @@ cd ~/carla_simulator
 ### **Step 1: Install Software Requirements**
 
 ```bash
+sudo apt-get update &&
+sudo apt-get install wget software-properties-common &&
+sudo add-apt-repository ppa:ubuntu-toolchain-r/test &&
+wget -O - https://apt.llvm.org/llvm-snapshot.gpg.key|sudo apt-key add
 sudo apt-add-repository "deb http://archive.ubuntu.com/ubuntu jammy main universe"
 sudo apt-get update
 sudo apt-get install build-essential clang-10 lld-10 g++-12 cmake ninja-build libvulkan1 python python3 python3-dev python3-pip libpng-dev libtiff5-dev libjpeg-dev tzdata sed curl unzip autoconf libtool rsync libxml2-dev git git-lfs
